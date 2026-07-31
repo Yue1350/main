@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TTS Bot - Terms of Service</title>
+    <title>TTS Bot - Privacy Policy</title>
     <style>
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
             line-height: 1.6; 
-            color: #333333; 
+            color: #dbdee1; 
             max-width: 800px; 
             margin: 0 auto; 
             padding: 20px; 
-            background-color: #f9f9f9; 
+            background-color: #1e1f22; 
         }
         .container { 
-            background-color: #ffffff; 
+            background-color: #2b2d31; 
             padding: 40px; 
             border-radius: 8px; 
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1); 
+            box-shadow: 0 4px 12px rgba(0,0,0,0.3); 
         }
         .nav-menu { 
             display: flex; 
             gap: 10px; 
-            margin-bottom: 20px; 
+            margin-bottom: 30px; 
             flex-wrap: wrap; 
         }
         .nav-btn { 
-            background-color: #e3e5e8; 
+            background-color: #35373c; 
             border: none; 
-            color: #2c2f33; 
+            color: #b5bac1; 
             padding: 10px 18px; 
             border-radius: 6px; 
             font-weight: bold; 
@@ -45,38 +45,19 @@
             background-color: #5865F2; 
             color: #ffffff; 
         }
-        .lang-switch { 
-            text-align: right; 
-            margin-bottom: 20px; 
-        }
-        .lang-btn { 
-            background-color: #e3e5e8; 
-            border: none; 
-            color: #2c2f33; 
-            padding: 6px 12px; 
-            border-radius: 4px; 
-            cursor: pointer; 
-            font-weight: bold; 
-            margin-left: 5px; 
-            transition: background-color 0.2s; 
-        }
-        .lang-btn.active { 
-            background-color: #4e5058; 
-            color: #ffffff; 
-        }
         h1 { 
             border-bottom: 2px solid #5865F2; 
             padding-bottom: 10px; 
-            color: #5865F2; 
+            color: #ffffff; 
         }
         h2 { 
             margin-top: 30px; 
-            color: #2c2f33; 
+            color: #f2f3f5; 
             font-size: 1.2rem; 
         }
         p, li { 
             font-size: 0.95rem; 
-            color: #4f545c; 
+            color: #dbdee1; 
         }
         ul { 
             padding-left: 20px; 
@@ -84,101 +65,54 @@
         .footer { 
             margin-top: 40px; 
             padding-top: 20px; 
-            border-top: 1px solid #e3e5e8; 
+            border-top: 1px solid #35373c; 
             font-size: 0.85rem; 
-            color: #747f8d; 
-        }
-        .lang-content { 
-            display: none; 
-        }
-        .lang-content.active { 
-            display: block; 
+            color: #949ba4; 
         }
     </style>
 </head>
 <body>
     <div class="container">
         <div class="nav-menu">
-            <a href="https://yue1350.github.io/main/" class="nav-btn">봇 설명</a>
-            <a href="https://yue1350.github.io/terms/" class="nav-btn active">이용 약관</a>
-            <a href="https://yue1350.github.io/privacy/" class="nav-btn">개인정보 보호 정책</a>
+            <a href="https://yue1350.github.io/main/" class="nav-btn">Bot Overview</a>
+            <a href="https://yue1350.github.io/terms/" class="nav-btn">Terms of Service</a>
+            <a href="https://yue1350.github.io/privacy/" class="nav-btn active">Privacy Policy</a>
         </div>
-        <div class="lang-switch">
-            <button class="lang-btn active" onclick="switchLang('en')">English</button>
-            <button class="lang-btn" onclick="switchLang('ko')">한국어</button>
-        </div>
-        <div id="lang-en" class="lang-content active">
-            <h1>Terms of Service</h1>
-            <p>These Terms of Service govern your use of TTS Bot (hereinafter referred to as "the Bot"), a Discord bot providing text-to-speech and voice channel utilities.</p>
-            <h2>1. Service Description</h2>
-            <p>The Bot provides the following features within Discord servers:</p>
-            <ul>
-                <li>Converting chat messages and common abbreviations into voice audio via Google Cloud TTS.</li>
-                <li>Announcing user joins/leaves in voice channels.</li>
-                <li>Handling custom emojis and resending them via Webhooks.</li>
-                <li>Managing per-guild settings such as voice selection, playback speed, and dedicated channels.</li>
-            </ul>
-            <h2>2. User Obligations & Restrictions</h2>
-            <p>Users agree not to engage in any of the following activities:</p>
-            <ul>
-                <li>Violating Discord's Terms of Service or Community Guidelines.</li>
-                <li>Abusing the Bot to spam text/audio or flood voice channels with unwanted content.</li>
-                <li>Interfering with the normal operation or server capacity of the Bot.</li>
-            </ul>
-            <h2>3. Service Availability & Modification</h2>
-            <ul>
-                <li>The Bot service may be changed, suspended, or discontinued at any time without prior notice due to developer decisions, maintenance, or changes in third-party APIs (Google Cloud TTS, Discord API).</li>
-                <li>The developer is not liable for any disruptions or damages caused by service unavailability.</li>
-            </ul>
-            <h2>4. Limitation of Liability</h2>
-            <ul>
-                <li>Users are solely responsible for the content of messages and audio triggered through the Bot.</li>
-                <li>The developer assumes no responsibility for disputes arising between users regarding the Bot's use.</li>
-            </ul>
-            <div class="footer">
-                <p>Effective Date: March 2, 2026</p>
-            </div>
-        </div>
-        <div id="lang-ko" class="lang-content">
-            <h1>이용약관</h1>
-            <p>본 약관은 TTS Bot(이하 "봇")이 제공하는 디스코드 텍스트 음성 변환 및 음성 채널 관련 서비스의 이용 조건을 규정합니다.</p>
-            <h2>제 1 조 (서비스 내용)</h2>
-            <p>봇은 디스코드 서버 내에서 다음과 같은 기능을 제공합니다.</p>
-            <ul>
-                <li>Google Cloud TTS를 활용한 채팅 메시지 및 줄임말 음성 출력</li>
-                <li>음성 채널 사용자 입/퇴장 안내 음성 출력</li>
-                <li>커스텀 이모지 처리 및 웹훅(Webhook)을 통한 메시지 재전송</li>
-                <li>서버별 목소리, 재생 속도 및 전용 채널 설정 관리</li>
-            </ul>
-            <h2>제 2 조 (이용자의 의무 및 제한 사항)</h2>
-            <p>사용자는 봇 이용 시 다음 행위를 해서는 안 됩니다.</p>
-            <ul>
-                <li>디스코드 서비스 약관 및 커뮤니티 가이드라인을 위반하는 행위</li>
-                <li>봇을 악용하여 음성을 무분별하게 남발하거나 타인에게 피해를 주는 행위</li>
-                <li>봇의 정상적인 운영 및 서버 동작을 방해하는 행위</li>
-            </ul>
-            <h2>제 3 조 (서비스 변경 및 중단)</h2>
-            <ul>
-                <li>봇 서비스는 점검, 개발자 사정 또는 외부 API(Google Cloud TTS, Discord API) 상태 변화에 따라 사전 통지 없이 변경되거나 중단될 수 있습니다.</li>
-                <li>서비스 중단으로 인해 발생한 어떠한 손해에 대해서도 책임을 지지 않습니다.</li>
-            </ul>
-            <h2>제 4 조 (면책 조항)</h2>
-            <ul>
-                <li>봇을 통해 재생되는 메시지 내용에 대한 책임은 해당 메시지를 작성한 사용자에게 있습니다.</li>
-                <li>개발자는 사용자 간에 발생한 분쟁에 개입하지 않으며 책임을 지지 않습니다.</li>
-            </ul>
-            <div class="footer">
-                <p>시행일자: 2026년 3월 2일</p>
-            </div>
+        
+        <h1>Privacy Policy</h1>
+        <p>This Privacy Policy explains how TTS Bot (hereinafter referred to as "the Bot") handles user data and information when providing text-to-speech and voice channel services.</p>
+        
+        <h2>1. Information We Process</h2>
+        <p>The Bot temporarily processes minimal data necessary to function properly:</p>
+        <ul>
+            <li><strong>User Identifiers:</strong> Discord User IDs and Display Names (used for voice channel join/leave announcements and identifying message authors).</li>
+            <li><strong>Server & Channel Identifiers:</strong> Discord Guild IDs and Channel IDs (used to save server-specific configurations like preferred voice, playback speed, and designated reading channels).</li>
+            <li><strong>Message Contents:</strong> Text messages sent in designated channels (processed temporarily to generate speech audio via Google Cloud TTS).</li>
+        </ul>
+        
+        <h2>2. Data Retention & Storage</h2>
+        <ul>
+            <li><strong>Temporary Audio Files:</strong> Audio files (`.mp3`) generated for TTS playback are automatically deleted immediately after playing.</li>
+            <li><strong>Server Settings:</strong> Guild preferences (voice type, speed, channel configurations) are stored in memory while the Bot is running and reset upon restart unless permanently logged.</li>
+            <li><strong>No Message Logging:</strong> Chat messages are processed in real-time and are never permanently stored on external databases or log files.</li>
+        </ul>
+        
+        <h2>3. Third-Party Services</h2>
+        <p>The Bot interacts with the following third-party APIs to provide its core services:</p>
+        <ul>
+            <li><strong>Google Cloud Text-to-Speech API:</strong> Text input is sent securely to Google Cloud TTS to generate voice audio. No personal identifiers are attached to these requests.</li>
+            <li><strong>Discord API:</strong> Used to read messages, manage voice connections, and handle Webhooks for custom emoji processing.</li>
+        </ul>
+        
+        <h2>4. Data Protection & Security</h2>
+        <p>We do not sell, trade, or share any user data with third parties. Authentication keys and API credentials are kept securely environment-restricted.</p>
+        
+        <h2>5. Changes to This Policy</h2>
+        <p>This Privacy Policy may be updated periodically. Any changes will be posted on this page with an updated effective date.</p>
+        
+        <div class="footer">
+            <p>Effective Date: March 2, 2026</p>
         </div>
     </div>
-    <script>
-        function switchLang(lang) {
-            document.querySelectorAll('.lang-content').forEach(el => el.classList.remove('active'));
-            document.querySelectorAll('.lang-btn').forEach(el => el.classList.remove('active'));
-            document.getElementById('lang-' + lang).classList.add('active');
-            event.target.classList.add('active');
-        }
-    </script>
 </body>
 </html>
