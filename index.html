@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>TTS Bot - Privacy Policy</title>
+    <title>TTS Bot - Overview</title>
     <style>
         body { 
             font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif; 
@@ -62,6 +62,13 @@
         ul { 
             padding-left: 20px; 
         }
+        .code-inline {
+            background-color: #1e1f22;
+            padding: 2px 6px;
+            border-radius: 4px;
+            color: #00a8fc;
+            font-family: monospace;
+        }
         .footer { 
             margin-top: 40px; 
             padding-top: 20px; 
@@ -74,44 +81,33 @@
 <body>
     <div class="container">
         <div class="nav-menu">
-            <a href="https://yue1350.github.io/main/" class="nav-btn">Bot Overview</a>
+            <a href="https://yue1350.github.io/main/" class="nav-btn active">Bot Overview</a>
             <a href="https://yue1350.github.io/terms/" class="nav-btn">Terms of Service</a>
-            <a href="https://yue1350.github.io/privacy/" class="nav-btn active">Privacy Policy</a>
+            <a href="https://yue1350.github.io/privacy/" class="nav-btn">Privacy Policy</a>
         </div>
         
-        <h1>Privacy Policy</h1>
-        <p>This Privacy Policy explains how TTS Bot (hereinafter referred to as "the Bot") handles user data and information when providing text-to-speech and voice channel services.</p>
+        <h1>TTS Bot Overview</h1>
+        <p>Welcome to <strong>TTS Bot</strong>! This Discord bot reads text messages in voice channels using Google Cloud TTS and provides various useful channel utilities.</p>
         
-        <h2>1. Information We Process</h2>
-        <p>The Bot temporarily processes minimal data necessary to function properly:</p>
+        <h2>Key Features</h2>
         <ul>
-            <li><strong>User Identifiers:</strong> Discord User IDs and Display Names (used for voice channel join/leave announcements and identifying message authors).</li>
-            <li><strong>Server & Channel Identifiers:</strong> Discord Guild IDs and Channel IDs (used to save server-specific configurations like preferred voice, playback speed, and designated reading channels).</li>
-            <li><strong>Message Contents:</strong> Text messages sent in designated channels (processed temporarily to generate speech audio via Google Cloud TTS).</li>
+            <li><strong>Text-to-Speech (TTS):</strong> Reads chat messages instantly in your current voice channel using Neural Google TTS voices.</li>
+            <li><strong>Join & Leave Announcements:</strong> Plays friendly TTS audio notifications when users enter or leave a voice channel.</li>
+            <li><strong>Abbreviation Expansion:</strong> Automatically converts internet slang and abbreviations (e.g., "ㅎㅇ", "ㄳ", "ㅇㅋ") into spoken words.</li>
+            <li><strong>Custom Emoji Processing:</strong> Converts custom server emojis into full-size images and relays them via Webhooks.</li>
+            <li><strong>Voice & Speed Control:</strong> Customizable voice options (Female/Male) and playback speeds ranging from 0.25x to 2.0x.</li>
+            <li><strong>Auto Disconnect:</strong> Automatically leaves the voice channel when no human users remain.</li>
         </ul>
-        
-        <h2>2. Data Retention & Storage</h2>
+
+        <h2>Bot Commands</h2>
         <ul>
-            <li><strong>Temporary Audio Files:</strong> Audio files (`.mp3`) generated for TTS playback are automatically deleted immediately after playing.</li>
-            <li><strong>Server Settings:</strong> Guild preferences (voice type, speed, channel configurations) are stored in memory while the Bot is running and reset upon restart unless permanently logged.</li>
-            <li><strong>No Message Logging:</strong> Chat messages are processed in real-time and are never permanently stored on external databases or log files.</li>
+            <li><span class="code-inline">/입장</span> : Summons the bot to your current voice channel.</li>
+            <li><span class="code-inline">/퇴장</span> : Disconnects the bot from the voice channel.</li>
+            <li><span class="code-inline">/tts설정</span> : Opens a menu to select TTS voices, playback speed, and designated reading channels.</li>
         </ul>
-        
-        <h2>3. Third-Party Services</h2>
-        <p>The Bot interacts with the following third-party APIs to provide its core services:</p>
-        <ul>
-            <li><strong>Google Cloud Text-to-Speech API:</strong> Text input is sent securely to Google Cloud TTS to generate voice audio. No personal identifiers are attached to these requests.</li>
-            <li><strong>Discord API:</strong> Used to read messages, manage voice connections, and handle Webhooks for custom emoji processing.</li>
-        </ul>
-        
-        <h2>4. Data Protection & Security</h2>
-        <p>We do not sell, trade, or share any user data with third parties. Authentication keys and API credentials are kept securely environment-restricted.</p>
-        
-        <h2>5. Changes to This Policy</h2>
-        <p>This Privacy Policy may be updated periodically. Any changes will be posted on this page with an updated effective date.</p>
-        
+
         <div class="footer">
-            <p>Effective Date: March 2, 2026</p>
+            <p>TTS Bot Service Overview</p>
         </div>
     </div>
 </body>
