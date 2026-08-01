@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ko">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -87,23 +87,25 @@
         </div>
         
         <h1>TTS Bot Overview</h1>
-        <p>Welcome to <strong>TTS Bot</strong>! This Discord bot reads text messages in voice channels using Google Cloud TTS and provides various useful channel utilities.</p>
+        <p>Welcome to <strong>TTS Bot</strong>! This Discord bot reads text messages in voice channels using high-quality <strong>Typecast AI Voices</strong> and provides advanced voice customization along with server management tools.</p>
         
         <h2>Key Features</h2>
         <ul>
-            <li><strong>Text-to-Speech (TTS):</strong> Reads chat messages instantly in your current voice channel using Neural Google TTS voices.</li>
-            <li><strong>Join & Leave Announcements:</strong> Plays friendly TTS audio notifications when users enter or leave a voice channel.</li>
-            <li><strong>Abbreviation Expansion:</strong> Automatically converts internet slang and abbreviations (e.g., "ㅎㅇ", "ㄳ", "ㅇㅋ") into spoken words.</li>
-            <li><strong>Custom Emoji Processing:</strong> Converts custom server emojis into full-size images and relays them via Webhooks.</li>
-            <li><strong>Voice & Speed Control:</strong> Customizable voice options (Female/Male) and playback speeds ranging from 0.25x to 2.0x.</li>
-            <li><strong>Auto Disconnect:</strong> Automatically leaves the voice channel when no human users remain.</li>
+            <li><strong>Typecast AI Text-to-Speech:</strong> Reads chat messages dynamically using Typecast's natural AI voice models.</li>
+            <li><strong>Advanced Voice Controls:</strong> Fine-tune your experience with customizable voice options ( 찬구, 주원, 채린, 등 ), playback speed (0.5x – 2.0x), audio pitch, and emotion presets (happy, sad, angry, whisper, etc.) with adjustable intensity.</li>
+            <li><strong>Join & Leave Announcements:</strong> Automatically plays TTS voice alerts (e.g., "[Name] 어하", "[Name] 어바") when users join or leave the voice channel.</li>
+            <li><strong>Text Normalization:</strong> Automatically converts internet slang (e.g., "ㅎㅇ", "ㄳ", "ㅇㅋ"), numbers to Korean words, English/usernames to Korean pronunciations, and handles URLs appropriately.</li>
+            <li><strong>Custom Emoji & Media Handling:</strong> Converts custom server emojis into full-size images relayed via Webhooks and announces incoming attachments/stickers via TTS.</li>
+            <li><strong>Dedicated Channel System:</strong> Effortlessly create, set, or clear dedicated TTS text channels.</li>
+            <li><strong>Auto Disconnect & Auto Delete:</strong> Automatically leaves the voice channel when empty and cleans up temporary channel messages.</li>
         </ul>
 
         <h2>Bot Commands</h2>
         <ul>
             <li><span class="code-inline">/입장</span> : Summons the bot to your current voice channel.</li>
             <li><span class="code-inline">/퇴장</span> : Disconnects the bot from the voice channel.</li>
-            <li><span class="code-inline">/tts설정</span> : Opens a menu to select TTS voices, playback speed, and designated reading channels.</li>
+            <li><span class="code-inline">/tts설정</span> : Opens an interactive menu to configure TTS voice, speed, pitch, emotion, and emotion intensity.</li>
+            <li><span class="code-inline">/tts채널 [생성/지정/해제]</span> : Creates a new TTS channel, sets the current channel as TTS-dedicated, or resets channel settings (Requires Manage Channels / Admin permission).</li>
         </ul>
 
         <div class="footer">
